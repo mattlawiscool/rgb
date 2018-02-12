@@ -1,0 +1,120 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    background-color: #3BAD35;
+    display: flex;
+    align-items: center;
+}
+
+.RGB-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    background-color: white;
+    color: #3BAD35;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-sm {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu-sm span {
+    font-weight: bolder;
+    font-size: 1.2em;
+    transition: ease 1s;
+}
+
+.menu-sm span:hover {
+    background-color: black;
+    color: white;
+}
+
+#ng,
+#answer {
+    margin-right: 30%;
+}
+
+#ng {
+    cursor: pointer;
+}
+
+#answer {
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+.square {
+    background-color: #3BAD35;
+    width: 25%;
+    height: 18em;
+    margin: 1.5em;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.RGB-title {
+    font-size: 2em;
+    color: white;
+}
+
+#picked-color {
+    margin: 0;
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 1050px) {
+    .square {
+        height: 14em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .square {
+        width: 33%;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    #picked-color {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 80vh;
+        width: 100vw;
+    }
+    .square {
+        width: 50%;
+        height: 33%;
+        border-radius: 0px;
+    }
+    .menu {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
