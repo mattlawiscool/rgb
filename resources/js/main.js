@@ -80,7 +80,11 @@ function generateNumber() {
 function winGame() {
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = pickedColor;
-    squares[i].className = "square animated tada"
+    if (window.innerWidth > 600) {
+      squares[i].className = "square animated tada"
+    } else {
+      squares[i].className = "square animated zoomOut"
+    }
   }
   
   rgbTitle.style.backgroundColor = pickedColor;
